@@ -12,7 +12,7 @@ import static org.junit.jupiter.api.Assertions.assertSame;
 
 @SpringBootTest
 class ReproduceApplicationIT {
-	private ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(ReproduceApplicationIT.class);
+	private final ch.qos.logback.classic.Logger logger = (ch.qos.logback.classic.Logger) LoggerFactory.getLogger(ReproduceApplicationIT.class);
 	private static final String MDC_KEY = "mdcKey";
 	private static final String MDC_VALUE = "mdcValue";
 
